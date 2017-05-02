@@ -180,13 +180,23 @@ foreach($questions as &$question){
                     </div>
                 </section>
             <?php endforeach; ?>
-            <section data-section-name="form-end" class="section page hero is-success is-bold is-fullheight">
+            <section data-section-name="form-end" class="end section page hero is-success is-bold is-fullheight">
                 <div class="hero-body">
                     <div class="container has-text-centered">
                         <h1 class="title">
                             Merci ! Vous pouvez maintenant enregistrer vos réponses !
                         </h1>
-                        <button type="submit" id="btn-submit" class="button is-info is-large"><i class="fa fa-send"></i>&nbsp;Enregistrer</button>
+                        <div class="columns">
+                            <div class="column is-half is-offset-one-quarter">
+                                <div class="field">
+                                    <input type="text" name="prenom" required class="input is-large" placeholder="Prenom">
+                                </div>
+                                <div class="field">
+                                    <input type="text" name="nom" required class="input is-large" placeholder="Nom">
+                                </div>
+                                <button type="submit" id="btn-submit" class="button is-info is-large"><i class="fa fa-send"></i>&nbsp;Enregistrer</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
