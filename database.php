@@ -2,8 +2,12 @@
 
 require_once('vendor/autoload.php');
 
-$dotenv = new Dotenv\Dotenv(__DIR__);
-$dotenv->load();
+try {
+    $dotenv = new Dotenv\Dotenv(__DIR__);
+    $dotenv->load();   
+} catch(Exception $e){
+    //
+}
 
 $dbName = getenv('DB_NAME');
 $dbHost = getenv('DB_HOST');
