@@ -5,7 +5,7 @@ require_once('database.php');
 
 
 
-$questions = $db->query('SELECT * FROM questions WHERE form_id = 1')->fetchAll(PDO::FETCH_ASSOC);
+$questions = $db->query('SELECT * FROM questions WHERE form_id = 1 ORDER BY ordre ASC')->fetchAll(PDO::FETCH_ASSOC);
 
 foreach($questions as &$question){
     $question['image'] = json_decode($question['image'], true);

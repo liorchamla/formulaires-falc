@@ -5,7 +5,9 @@ html {
 img {
     max-height: 150px;
 }
-
+.hero-body > div > img {
+    max-height: 100px;
+}
 
 section:not(.end) div.column {
     cursor: pointer;

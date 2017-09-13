@@ -1,6 +1,6 @@
 <?php
 
-$db = new PDO('mysql:host=localhost;dbname=formulaires;charset=utf8','liorchamla','');
+require_once('../database.php');
 
 $reponses = $db->query('SELECT * FROM answers WHERE formulaire_id = 1')->fetchAll(PDO::FETCH_OBJ);
 
