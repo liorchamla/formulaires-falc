@@ -150,21 +150,21 @@ foreach($questions as &$question){
                                         </div>
                                     <?php endforeach; ?>
                                 <?php else : $i = 0; ?>
-                                    <div class="column" data-key-code="49">
+                                    <div class="column oui" data-key-code="49">
                                         <div>
                                             <p class="heading">Oui</p>
                                             <p class="title"><i class="em em-smile"></i><br><span class="key"><?= ++$i ?></span> </p>
                                         </div>
                                         <input type="hidden" value="Oui">
                                     </div>
-                                    <div class="column" data-key-code="50">
+                                    <div class="column non" data-key-code="50">
                                         <div>
                                             <p class="heading">Non</p>
                                             <p class="title"><i class="em em-worried"></i><br><span class="key"><?= ++$i ?></span> </p>
                                         </div>
                                         <input type="hidden" value="Non">
                                     </div>
-                                    <div class="column" data-key-code="51">
+                                    <div class="column nesaitpas" data-key-code="51">
                                         <div>
                                             <p class="heading">Je ne sais pas</p>
                                             <p class="title">
